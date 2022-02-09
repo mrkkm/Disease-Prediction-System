@@ -1,0 +1,20 @@
+Disease Prediction System/
+├── .vscode
+├── __pycache__
+├── templates/
+│   ├── css/
+│   │   └── style.css
+│   ├── img/
+│   │   ├── 01.jpg
+│   │   ├── a.jpg
+│   │   ├── about.jpg
+│   │   └── main_page_image.jpg
+│   ├── about.html
+│   ├── contact.html
+│   ├── disease_prediction.html
+│   ├── index.html
+│   └── records.html
+├── disease_prediction.py
+├── mainapp.py
+├── Testing.csv
+└── Training.csv

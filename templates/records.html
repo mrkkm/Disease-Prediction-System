@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <title>Records of Users</title>
+    <style>
+        body {
+            background-color: lightgoldenrodyellow;
+        }
+
+        h1 {
+            background-color: lightgreen;
+            height: 70px;
+        }
+
+        table,
+        td,
+        th {
+            border: 2px solid black;
+            text-align: center;
+        }
+
+        table {
+            border-collapse: collapse;
+            width: 100%;
+            background-color: lightblue;
+        }
+    </style>
+</head>
+
+<body>
+    <center>
+        <h1>Records of Users</h1>
+    </center>
+
+    <form action="/records" method="get">
+        <table align="center">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Symptom 1</th>
+                    <th>Symptom 2</th>
+                    <th>Symptom 3</th>
+                    <th>Symptom 4</th>
+                    <th>Symptom 5</th>
+                    <th>Decision Tree Algorithms</th>
+                    <th>Random Forest Algorithms</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for i in records %}
+                <tr>
+                    <td>{{i[0]}}</td>
+                    <td>{{i[1]}}</td>
+                    <td>{{i[2]}}</td>
+                    <td>{{i[3]}}</td>
+                    <td>{{i[4]}}</td>
+                    <td>{{i[5]}}</td>
+                    <td>{{i[6]}}</td>
+                    <td>{{i[7]}}</td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    </form>
+
+</body>
+
+</html>
